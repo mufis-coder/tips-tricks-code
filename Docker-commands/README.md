@@ -46,3 +46,52 @@ docker login --username=mufis
 ```
 docker run -d -p 8080:8080 --name spring-demo mufis/demo:latest
 ```
+
+6. Melihat process status yang berjalan di docker kita.
+
+```
+docker ps
+```
+
+7. Melihat log dari container docker kita.
+
+```
+docker log {nama-container}
+```
+
+8. Menghapus image docker kita.
+
+```
+docker rmi {image-id:tag}
+```
+
+9. Mematikan container yang berjalan pada docker kita.
+
+```
+docker stop {nama-container/container-id}
+```
+
+10. Menghapus container docker kita.
+
+```
+docker rm {nama container}
+```
+
+11. Push container ke docker hub.
+
+```
+docker push {nama-image/container:lates}
+```
+
+12. Catatan tambahan docker
+
+```
+port-lokal: port-docker
+```
+
+13. Pull and run dari docker hub.
+
+```
+docker pull {docker-host}
+docker run
+```
