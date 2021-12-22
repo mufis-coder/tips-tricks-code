@@ -28,4 +28,32 @@ masuk ke container dengan container-id
 docker exec -it 2b8621dd1c23652d1a3967b1a04deaa537130454d2c3f8400d4bee6692d2507e bash
 ```
 
-``` psql -U postgres -W ``` // masuk ke nama user
+``` psql -U postgres -W ``` // masuk ke nama user postgresql
+
+Hapus database di postgres
+
+```
+DROP DATABASE eco_aerator;
+```
+
+Membuat database di postgres
+
+```
+CREATE DATABASE eco_aerator;
+```
+
+``` \c eco_aerator ``` // masuk ke database
+
+``` exit ``` // keluar
+
+Command pada postgresql
+
+```
+UPDATE users SET email='admin@gmail.com' WHERE id=2;
+
+UPDATE users SET roles='admin' WHERE id=2;
+
+CREATE DATABASE myApp_dev;
+
+UPDATE users SET role="admin" WHERE id=1;
+```
