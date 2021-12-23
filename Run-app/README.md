@@ -1,4 +1,4 @@
-# Command Running Aplikasi Web
+# Command Running Aplikasi Programming
 
 Berisi tips dan trik bagaimana cara melakukan run pada aplikasi web (sesuai dengan bahasa pemrogramannya atau frameworknya).
 
@@ -21,3 +21,19 @@ mvn clean install
 ```
 mvn spring-boot:run
 ```
+
+## C/C++-Native
+
+1. Compile aplikasi C++
+
+```
+g++ {nama-app}.c -o {nama-eksekusi}
+```
+
+2. Eksekusi aplikasi yang telah dicompile
+
+```
+./nama-eksekusi
+```
+
+
