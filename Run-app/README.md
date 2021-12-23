@@ -8,7 +8,24 @@ Berisi tips dan trik bagaimana cara melakukan run pada aplikasi web (sesuai deng
 php spark serve 
 ```
 
-## Java-Springboot
+## Java
+
+### Native
+
+1. Compile aplikasi java
+
+```
+javac filename.java
+```
+
+2. Run aplikasi java
+
+```
+java filename
+```
+
+
+### Springboot
 
 1. Untuk membersihkan dan menginstall semua dependensi lokal (many module).
 
