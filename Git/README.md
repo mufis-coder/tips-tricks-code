@@ -29,24 +29,40 @@ Git branch
 ```
 git branch //melihat branch local
 git branch -d {localBranchName} //menghapus local branch
+git branch -r //melihat branch local buat remote
 ```
 
-git push origin HEAD:<remoteBranch> 
-git push -u origin master
+Melakukan push
 
-git push -f origin master
+```
+git push origin HEAD:{remoteBranch} //push ke beda branch dari current branch local
+git push -u origin master //push ke master branch
+git push -f origin master //push ke master dengan force
+git push origin --delete {remoteBranchName} //untuk menghapus branch remote secara local
+```
 
-git pull origin master
-git pull origin master --allow-unrelated-histories
+Melakukan pull
 
-git push origin --delete remoteBranchName
+```
+git pull origin master //pull biasa dari branch master
+git pull origin master --allow-unrelated-histories //pull dengan allowing histories yang beda dari master
+```
 
-git remote remove origin
+Git remote
 
-git remote add origin https://github.com/YourUsername/YourRepo.git
+```
+git remote remove origin //menghapus repo remote dengan nama origin
+git remote add origin https://github.com/YourUsername/YourRepo.git //menambahkan remote repo dgn nama origin
+```
 
-git clone https://github.com/reyhannaufal/soal-shift-sisop-modul-1-A04-2021.git
+Git checkout
 
-git checkout -b ＜new-branch＞
+```
+git checkout -b ＜new-branch＞ //membuat dan pindah ke branch baru secara local
+git checkout {name branch} //pindah ke sebuah branch secara lokal
+```
 
---allow-unrelated-histories
+Git clone
+```
+git clone https://github.com/reyhannaufal/soal-shift-sisop-modul-1-A04-2021.git //Cloning repo git
+```
