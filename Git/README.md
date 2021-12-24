@@ -27,8 +27,8 @@ git commit -m "pesan"
 Git branch
 
 ```
-git branch <!-- melihat branch local -->
-git branch -d {localBranchName} <!-- menghapus local branch -->
+git branch //melihat branch local
+git branch -d {localBranchName} //menghapus local branch
 ```
 
 git push origin HEAD:<remoteBranch> 
