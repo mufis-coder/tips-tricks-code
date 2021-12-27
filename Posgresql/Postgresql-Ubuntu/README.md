@@ -1,59 +1,122 @@
 # Run Database Postgresql with Docker
 
-```sudo -i -u postgres``` //install postgress di linux
+## Install biasa di Ubuntu
 
-run image posgres dengan pengaturan username dan password sendiri
+- Install Postgresql di linux
 
-```
-docker run -e POSTGRES_PASSWORD=POSTGRESQLPASSWORD -e POSTGRES_USER=POSTGRESQLUSARNAME postgres
-```
+    ```
+    sudo -i -u postgres
+    ##or
+    sudo apt install postgresql postgresql-contrib
+    psql --version ##cek versi
+    ```
 
-``` sudo ss -lptn 'sport = :5432' ``` //cek penggunaan port postgresql (5432)
+- Mengatur password postgres
 
-``` sudo kill -9 {pid} ``` //kill process dengan suatu pid
+    ```
+    sudo passwd postgres ##masukan password untuk SU postgres
+    ```
 
-``` docker ps -a ``` // melihat list docker dengan parameter all
+## Install menggunakan docker
 
-membuat container postgress db
+- Install image posgres menggunakan docker dan pengaturan username dan password sendiri
 
-```
-docker run --name postgres-db -e POSTGRES_PASSWORD=POSTGRESQLPASSWORD -p 5432:5432 -d postgres
-```
+    ```
+    docker run -e POSTGRES_PASSWORD=POSTGRESQLPASSWORD -e POSTGRES_USER=POSTGRESQLUSARNAME postgres
+    ```
 
-``` docker start postgres-db ``` //start docker
+- Melihat list docker dengan parameter all
 
-masuk ke container dengan container-id
+    ```
+    docker ps -a
+    ```
 
-```
-docker exec -it 2b8621dd1c23652d1a3967b1a04deaa537130454d2c3f8400d4bee6692d2507e bash
-```
+- Membuat container postgressdb
 
-``` psql -U postgres -W ``` // masuk ke nama user postgresql
+    ```
+    docker run --name postgres-db -e POSTGRES_PASSWORD=POSTGRESQLPASSWORD -p 5432:5432 -d postgres
+    ```
 
-Hapus database di postgres
+- Start docker
 
-```
-DROP DATABASE eco_aerator;
-```
+    ```
+    docker start postgres-db
+    ```
 
-Membuat database di postgres
+- Masuk ke container dengan container-id
 
-```
-CREATE DATABASE eco_aerator;
-```
+    ```
+    docker exec -it 2b8621dd1c23652d1a3967b1a04deaa537130454d2c3f8400d4bee6692d2507e bash
+    ```
 
-``` \c eco_aerator ``` // masuk ke database
+## Penggunaan postgresql
 
-``` exit ``` // keluar
+- Cek penggunaan port ```5432``` karena ini adalah port default postgresql
 
-Command pada postgresql
+    ```
+    sudo ss -lptn 'sport = :5432' ##cek penggunaan port postgresql (5432)
+    sudo kill -9 {pid} ##kill process dengan suatu pid
+    ```
 
-```
-UPDATE users SET email='admin@gmail.com' WHERE id=2;
+- Perintah utama postgres
 
-UPDATE users SET roles='admin' WHERE id=2;
+    ```
+    sudo service postgresql status ##for checking the status of your database.
+    sudo service postgresql start ##to start running your database.
+    sudo service postgresql stop ##to stop running your database.
+    ```
 
-CREATE DATABASE myApp_dev;
+- Membuat role baru user untuk postgresql. Masukan username dan password.
 
-UPDATE users SET role="admin" WHERE id=1;
-```
+    ```
+    createuser --interactive --pwprompt
+    ```
+
+- Masuk ke postgresql: masukan username dan password
+
+    ```
+    psql -U postgres -W
+    ##or
+    su - postgres
+    ```
+
+- Masuk ke environment postgres
+
+    ```
+    psql
+    ```
+
+- Melakukan DLL di postgres
+  
+    ```
+    CREATE DATABASE "bni-fp"; ## membuat database baru
+    DROP DATABASE eco_aerator; ## menghapus database
+    \l ## melihat list database
+    ```
+
+- Masuk ke environment database
+
+    ```
+    \c "{namadb}"
+    \dt ## melihat list table
+    ```
+
+- Melakukan DML di postgresql
+  
+    ```
+    SELECT * FROM posts;
+
+    UPDATE users SET email='admin@gmail.com' WHERE id=2;
+
+    UPDATE users SET roles='admin' WHERE id=2;
+
+    CREATE DATABASE myApp_dev;
+
+    UPDATE users SET role="admin" WHERE id=1;
+    ```
+
+- Keluar dari environment database dan postgresql
+
+    ```
+    exit
+    ```
