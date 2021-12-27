@@ -26,3 +26,38 @@ Mengatur konfigurasi kafka di windows dengan bantuan ubuntu wsl.
     cd /mnt/d/Code/Belajar/Non-Kuliah-root/Altera-SpringBoot-root/Kafka/kafka_2.13-3.0.0
     ```
 
+5. Start  zookeeper
+
+    ```
+    bin/zookeeper-server-start.sh config/zookeeper.properties
+    ```
+
+6. Start server-kafka
+
+    ```
+    bin/kafka-server-start.sh config/server.properties
+    ```
+
+7. Buat topic untuk menyimpan event
+
+    ```
+    bin/kafka-topics.sh --create --partitions 1 --replication-factor 1 --topic fpbni-altera --bootstrap-server localhost:9092
+    ```
+
+8. Nulis event ke suatu topic
+
+    ```
+    bin/kafka-console-producer.sh --topic fpbni-altera --bootstrap-server localhost:9092
+    ```
+
+9. Baca event dari suatu topic
+    
+    ```
+    bin/kafka-console-consumer.sh --topic fpbni-altera --from-beginning --bootstrap-server localhost:9092
+    ```
+
+10. Melihat list topic yang tersedia
+
+    ```
+    bin/kafka-topics.sh --bootstrap-server=localhost:9002 --list
+    ```
