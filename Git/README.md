@@ -53,6 +53,8 @@ Git remote
 ```
 git remote remove origin //menghapus repo remote dengan nama origin
 git remote add origin https://github.com/YourUsername/YourRepo.git //menambahkan remote repo dgn nama origin
+git config --get remote.origin.url //get remote url
+git remote show origin //show origin url
 ```
 
 Git checkout
