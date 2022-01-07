@@ -1,0 +1,13 @@
+//ini untuk awalan alat
+mos build --local
+mos flash
+mos wifi "Galaxy Tab A" "12345678900" --port /dev/ttyUSB0
+mos config-set dash.enable=true dash.token=dQFsJ5tMEdVt5BLKkgEpOQ --port /dev/ttyUSB0 //mdash
+mos aws-iot-setup --aws-region ap-southeast-1 --aws-iot-policy mos-default //aws
+
+//ini via update secara OTA
+mos build --local
+{mdash upload fd.zip}
+commit pakai setting OTA.commit
+
+
