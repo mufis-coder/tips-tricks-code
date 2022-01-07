@@ -1,27 +1,3 @@
-mos flash esp8266 --port /dev/ttyUSB0
-
-mos flash https://mdash.net/downloads/ccm/ccm.esp8266.zip --port /dev/ttyUSB0
-
-mos flash-read --platform esp8266 /home/mufis-linux/Projek/IoT/eco-aerator-iot-device/main/main.ino.nodemcu.bin
-mos wifi "Galaxy Tab A" "12345678900" --port /dev/ttyUSB0
-mos wifi "mufis" "1234567890" --port /dev/ttyUSB0
-mos config-set dash.enable=true dash.token=dQFsJ5tMEdVt5BLKkgEpOQ --port /dev/ttyUSB0
-
-
-/dev/ttyUSB0
-
-
-
-mos flash https://github.com/mongoose-os-apps/demo-c/releases/download/latest/demo-c-esp8266.zip --port /dev/ttyUSB0
-
-
-mos flash /home/mufis-linux/sketch_sep27a/sketch_sep27a.ino.nodemcu.bin --port /dev/ttyUSB0
-
-
-mkdir empty
-mos clone https://github.com/mongoose-os-apps/empty eco-aerator-iot
-
-
 
 mos wifi WIFI_NETWORK_NAME WIFI_PASSWORD
 
