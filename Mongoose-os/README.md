@@ -39,8 +39,45 @@ mos aws-iot-setup --aws-region ap-southeast-1 --aws-iot-policy mos-default
 ```
 - mos build --local
 - 'upload hasil build (fd.zip) ke mdash.net'
-- 'commit hasil firmware terbaru menggunakan settingan OTA.commit di mdash.net'
+- 'commit hasil firmware terbaru menggunakan settingan OTA.commit di mdash.net -> rpc.commit'
 ```
 
-
 ## Perintah-perintah untuk membuat custom library mongoose-os
+
+- Clone template yang ada
+  
+```
+git clone https://github.com/mongoose-os-libs/empty deps/{nama-library}
+```
+
+- Buat files berikut pada template folder hasil cloning
+
+```
+include/mgos_{nama-library}.h
+src/mgos_{nama-library}.c 
+```
+
+- Tambahkan argumen berikut pada file .h
+
+```
+mgos_sensorAerator_init
+```
+
+- Tambahkan argumen berikut
+
+```
+{nama-library}/src
+```
+
+- Tambahkan argumen berikut pada file .c
+
+```
+#include "mgos_{nama-library}.h"
+```
+
+- Tambahkan library berikut pada file codingan mongoose-os
+
+```
+libs:
+- name: {nama-library}
+```
