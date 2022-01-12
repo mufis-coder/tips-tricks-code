@@ -1,4 +1,6 @@
-# Berisi perintah-perintah penting pada git
+# Commands dan Fitur yang ada pada git
+
+## Perintah-perintah dasar
 
 Inisialisasi git
 
@@ -67,4 +69,18 @@ git checkout {name branch} //pindah ke sebuah branch secara lokal
 Git clone
 ```
 git clone https://github.com/reyhannaufal/soal-shift-sisop-modul-1-A04-2021.git //Cloning repo git
+```
+
+## Fitur pada readme git
+
+Hyperlink
+
+```
+[{teks-yang-ditampilkan}]({link})
+```
+
+Image/gif
+
+```
+![alt text]({link-gambar}) <br />
 ```
