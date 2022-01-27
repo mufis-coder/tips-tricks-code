@@ -12,6 +12,7 @@ Menambahkan files pada git
 
 ```
 git add .
+git add README.md
 ```
 
 Melihat status git
