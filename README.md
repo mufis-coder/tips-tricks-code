@@ -9,3 +9,7 @@ Repositori untuk menyimpan tips dan trik yang sama temui selama meng-koding
 
 - Materi dan soal TC
   [LINK](ciut.in/bankbukusoaltc)
+
+### Pengetahuan umum komputer
+
+- 1 detik komputer =  10^8 perintah
