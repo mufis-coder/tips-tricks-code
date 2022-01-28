@@ -7,3 +7,9 @@
     ```
     yarn typeorm migration:revert
     ```
+
+- Run migrasi db
+
+    ```
+    yarn typeorm migration:run
+    ```
