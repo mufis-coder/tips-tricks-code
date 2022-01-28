@@ -4,11 +4,9 @@ Repositori untuk menyimpan tips dan trik yang sama temui selama meng-koding
 
 ## Catatan
 
-- Pratikum dasprog, strukdat
-  [LINK-REPO](https://github.com/MuhammadArifFaizin/BelajarProgramming/)
+- Pratikum dasprog, strukdat: [LINK-REPO](https://github.com/MuhammadArifFaizin/BelajarProgramming/)
 
-- Materi dan soal TC
-  [LINK](ciut.in/bankbukusoaltc)
+- Materi dan soal TC: [LINK](https://drive.google.com/drive/folders/1ikZBNepmP4WmX09FfJlsTDVyDNtU3ttp)
 
 ### Pengetahuan umum komputer
 
