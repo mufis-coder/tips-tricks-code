@@ -1,4 +1,4 @@
-# Commands dan Fitur yang ada pada Protokol Buffer
+# Commands dan Fitur yang ada pada Protocol Buffer
 
 ## Pada Javascript
 
