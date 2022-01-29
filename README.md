@@ -1,6 +1,10 @@
-# tips-tricks-code
+# Tips dan Trik Code
 
 Repositori untuk menyimpan tips dan trik yang sama temui selama meng-koding
+
+## Markdown Syntax Highlighting List
+
+[LINK REFERENSI](https://github.com/jincheng9/markdown_supported_languages)
 
 ## VS Code Extenstion
 
