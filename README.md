@@ -2,6 +2,10 @@
 
 Repositori untuk menyimpan tips dan trik yang sama temui selama meng-koding
 
+## VS Code Extenstion
+
+- live code share
+
 ## Catatan
 
 - Pratikum dasprog, strukdat: [LINK-REPO](https://github.com/MuhammadArifFaizin/BelajarProgramming/)
