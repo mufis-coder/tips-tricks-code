@@ -2,8 +2,10 @@
 
 ## Perintah run Arduino IDE di Ubuntu
 
-```
-sudo su
-cd /dev
-chown mufis-linux ttyUSB0
-```
+- Run Arduino IDE pada Ubuntu
+
+    ```
+    sudo su
+    cd /dev
+    chown mufis-linux ttyUSB0
+    ```
