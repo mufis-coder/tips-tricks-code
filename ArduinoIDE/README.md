@@ -4,7 +4,7 @@
 
 - Run Arduino IDE pada Ubuntu
 
-    ```
+    ```bash
     sudo su
     cd /dev
     chown mufis-linux ttyUSB0
