@@ -86,3 +86,15 @@ Image/gif
 ```bash
 ![alt text]({link-gambar}) <br />
 ```
+
+## Fitur Lain-lain
+
+- Merge conflict in git bash
+
+```text
+- press "i" (i for insert)
+- write your merge message
+- press "esc" (escape)
+- write ":wq" (write & quit)
+- then press enter
+```
