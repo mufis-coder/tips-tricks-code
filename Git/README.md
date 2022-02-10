@@ -89,7 +89,7 @@ Image/gif
 
 ## Fitur Lain-lain
 
-- Merge conflict in git bash
+- Merge conflict in git bash link: <https://stackoverflow.com/questions/19085807/please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially>
 
 ```text
 - press "i" (i for insert)
