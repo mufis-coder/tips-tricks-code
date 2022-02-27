@@ -2,55 +2,60 @@
 
 Berisi tips dan trik bagaimana cara melakukan run pada aplikasi web (sesuai dengan bahasa pemrogramannya atau frameworknya).
 
-## PHP-CI-04
+## PHP
 
-```
+### CI-04
+
+```bash
 php spark serve 
+```
+
+### Laravel
+
+```bash
+php artisan serve
 ```
 
 ## Java
 
 ### Native
 
-1. Compile aplikasi java
+- Compile aplikasi java
 
-```
+```bash
 javac filename.java
 ```
 
-2. Run aplikasi java
+- Run aplikasi java
 
-```
+```bash
 java filename
 ```
 
-
 ### Springboot
 
-1. Untuk membersihkan dan menginstall semua dependensi lokal (many module).
+- Untuk membersihkan dan menginstall semua dependensi lokal (many module).
 
-```
+```bash
 mvn clean install
 ```
 
-2. Untuk run aplikasi spring-boot
+- Untuk run aplikasi spring-boot
 
-```
+```bash
 mvn spring-boot:run
 ```
 
 ## C/C++-Native
 
-1. Compile aplikasi C++
+- Compile aplikasi C++
 
-```
+```bash
 g++ {nama-app}.c -o {nama-eksekusi}
 ```
 
-2. Eksekusi aplikasi yang telah dicompile
+- Eksekusi aplikasi yang telah dicompile
 
-```
+```bash
 ./nama-eksekusi
 ```
-
-
