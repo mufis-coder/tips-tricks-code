@@ -1,6 +1,6 @@
 # Tips dan Trik Code
 
-Repositori untuk menyimpan tips dan trik yang sama temui selama meng-koding
+Repositori untuk menyimpan tips dan trik yang saya temui selama meng-koding
 
 ## Markdown Syntax Highlighting List
 
