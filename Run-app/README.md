@@ -16,6 +16,14 @@ php spark serve
 php artisan serve
 ```
 
+## Javascript
+
+### NodeJs
+
+```bash
+nodejs firstapp.js
+```
+
 ## Java
 
 ### Native
