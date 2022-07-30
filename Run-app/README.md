@@ -24,6 +24,12 @@ php artisan serve
 nodejs firstapp.js
 ```
 
+### ReactJs
+
+```bash
+npx create-react-app .
+```
+
 ## Java
 
 ### Native
