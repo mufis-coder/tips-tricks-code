@@ -30,6 +30,12 @@ nodejs firstapp.js
 npx create-react-app .
 ```
 
+### Json-server
+
+```bash
+npx json-server --watch data/db.json --port 8000
+```
+
 ## Java
 
 ### Native
