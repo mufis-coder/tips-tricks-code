@@ -30,6 +30,12 @@ nodejs firstapp.js
 npx create-react-app .
 ```
 
+### ElectronJS
+
+```bash
+yarn start:electron
+```
+
 ### Json-server
 
 ```bash
